@@ -1012,7 +1012,7 @@
           <div class="event-way card reveal">
             <span class="sec-kicker">Cách 1</span>
             <h3>Vẽ fanart</h3>
-            <div class="event-prize">50.000đ <small>/ tác phẩm hợp lệ</small></div>
+            <div class="event-prize">100.000đ <small>/ tác phẩm hợp lệ</small></div>
             <p>Chủ đề: Zi Eer đón Trung Thu (đèn lồng, ánh trăng, thư viện… vẽ theo ý bạn). Đăng tranh kèm hashtag hoặc gửi trong Discord, ghi rõ tên kênh của bạn.</p>
             <div class="hashtags"><span>#ChronoArchive</span><span>#zierune</span><span>#zieer</span></div>
           </div>
@@ -1635,7 +1635,7 @@
       if (v) n.textContent = v;
     });
 
-    fanarts.forEach(a => { a.qua = Number(a.qua) || 50000; });
+    fanarts.forEach(a => { a.qua = Number(a.qua) || 100000; });
     regulars.forEach(r => { r.qua = Number(r.qua) || 20000; });
     const total = [...fanarts, ...regulars].reduce((s, x) => s + x.qua, 0);
     const sentCount = [...fanarts, ...regulars].filter(x => x.daGui).length;

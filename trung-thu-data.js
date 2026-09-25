@@ -7,14 +7,14 @@
  * 2. Thêm một dòng vào danh sách "fanarts" bên dưới, ví dụ:
  *
  *    { tacGia: "Mây Chiều", kenh: "@maychieu", anh: "fanart/may-chieu.jpg",
- *      link: "https://facebook.com/...", qua: 50000, daGui: false },
+ *      link: "https://facebook.com/...", qua: 100000, daGui: false },
  *
  *    tacGia : tên hiển thị của người vẽ (bắt buộc)
  *    anh    : đường dẫn tới ảnh trong thư mục fanart/ (bắt buộc)
  *    kenh   : tên kênh / tài khoản của họ (không bắt buộc)
  *    link   : link bài đăng gốc, phải bắt đầu bằng https:// (không bắt buộc)
  *    tieuDe : tên tranh (không bắt buộc)
- *    qua    : số tiền quà, mặc định 50000
+ *    qua    : số tiền quà, mặc định 100000
  *    daGui  : true khi đã gửi quà, false khi chưa
  *
  * ── THÊM NGƯỜI XEM THƯỜNG XUYÊN ──────────────────────────────
@@ -29,7 +29,7 @@ window.TRUNG_THU_EVENT = {
   hanGuiQua: "30/9",
 
   fanarts: [
-    // { tacGia: "Tên người vẽ", kenh: "@kenh", anh: "fanart/ten-file.jpg", link: "", qua: 50000, daGui: false },
+    // { tacGia: "Tên người vẽ", kenh: "@kenh", anh: "fanart/ten-file.jpg", link: "", qua: 100000, daGui: false },
     { tacGia: "Hikari", anh: "fanart/hikari.jpg", daGui: false },
     { tacGia: "Iris", anh: "fanart/iris.webp", daGui: false },
   ],
