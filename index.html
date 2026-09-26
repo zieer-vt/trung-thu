@@ -1297,7 +1297,8 @@
     <button class="lb-btn lb-next" id="lbNext" aria-label="Tranh sau">›</button>
   </div>
 
-  <script src="trung-thu-data.js"></script>
+  <!-- Always load the latest data file so new names and fanart show up right away -->
+  <script>document.write('<script src="trung-thu-data.js?t=' + Date.now() + '"><\/script>');</script>
   <script>
   (() => {
     'use strict';
