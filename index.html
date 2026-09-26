@@ -1628,7 +1628,7 @@
     // Pass amount = null to hide the sum (regular viewers' gifts are kept private)
     const giftBadge = (amount, sent) => {
       const label = amount == null
-        ? (sent ? '✓ Đã nhận quà' : '🎁 Chờ quà')
+        ? (sent ? '✓ Đã gửi quà' : '🎁 Chờ quà')
         : (sent ? '✓ Đã gửi ' : '🎁 ') + money(amount);
       const b = el('span', 'gift' + (sent ? ' sent' : ''), label);
       b.title = sent ? 'Đã gửi quà' : 'Quà đang chờ gửi';

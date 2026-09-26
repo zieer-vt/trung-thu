@@ -20,7 +20,7 @@
  * ── THÊM NGƯỜI XEM THƯỜNG XUYÊN ──────────────────────────────
  *    { ten: "Tên Discord", daGui: false },
  *    (Trang không hiện số tiền của người xem thường xuyên, chỉ hiện tên
- *     và trạng thái "Đã nhận quà" / "Chờ quà".)
+ *     và trạng thái "Đã gửi quà" / "Chờ quà".)
  *
  * Lưu ý: KHÔNG ghi số tài khoản, số điện thoại hay thông tin MoMo ở đây.
  * File này công khai với mọi người xem trang.
