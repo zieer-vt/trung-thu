@@ -18,7 +18,9 @@
  *    daGui  : true khi đã gửi quà, false khi chưa
  *
  * ── THÊM NGƯỜI XEM THƯỜNG XUYÊN ──────────────────────────────
- *    { ten: "Tên Discord", qua: 20000, daGui: false },
+ *    { ten: "Tên Discord", daGui: false },
+ *    (Trang không hiện số tiền của người xem thường xuyên, chỉ hiện tên
+ *     và trạng thái "Đã nhận quà" / "Chờ quà".)
  *
  * Lưu ý: KHÔNG ghi số tài khoản, số điện thoại hay thông tin MoMo ở đây.
  * File này công khai với mọi người xem trang.
@@ -35,7 +37,14 @@ window.TRUNG_THU_EVENT = {
   ],
 
   regulars: [
-    // { ten: "Tên Discord", qua: 20000, daGui: false },
+    // { ten: "Tên Discord", daGui: false },
+    { ten: "Yuly", daGui: true },
+    { ten: "Meo", daGui: true },
+    { ten: "Nhien", daGui: true },
+    { ten: "Miffy", daGui: true },
+    { ten: "Kunaro akai", daGui: true },
+    { ten: "Ryuzen Sejong", daGui: true },
+    { ten: "Kyubi Aonagi", daGui: true },
   ],
 
   // Nhạc riêng (không bắt buộc). Trang đã có sẵn 3 bản nhạc tự tạo.

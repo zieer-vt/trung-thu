@@ -1624,8 +1624,12 @@
       if (text != null) e.textContent = text;
       return e;
     };
+    // Pass amount = null to hide the sum (regular viewers' gifts are kept private)
     const giftBadge = (amount, sent) => {
-      const b = el('span', 'gift' + (sent ? ' sent' : ''), (sent ? '✓ Đã gửi ' : '🎁 ') + money(amount));
+      const label = amount == null
+        ? (sent ? '✓ Đã nhận quà' : '🎁 Chờ quà')
+        : (sent ? '✓ Đã gửi ' : '🎁 ') + money(amount);
+      const b = el('span', 'gift' + (sent ? ' sent' : ''), label);
       b.title = sent ? 'Đã gửi quà' : 'Quà đang chờ gửi';
       return b;
     };
@@ -1636,8 +1640,7 @@
     });
 
     fanarts.forEach(a => { a.qua = Number(a.qua) || 100000; });
-    regulars.forEach(r => { r.qua = Number(r.qua) || 20000; });
-    const total = [...fanarts, ...regulars].reduce((s, x) => s + x.qua, 0);
+    const total = fanarts.reduce((s, x) => s + x.qua, 0);
     const sentCount = [...fanarts, ...regulars].filter(x => x.daGui).length;
     const people = fanarts.length + regulars.length;
 
@@ -1645,7 +1648,7 @@
     [
       [fanarts.length, 'Tác phẩm'],
       [regulars.length, 'Người xem thường xuyên'],
-      [money(total), 'Tổng quà'],
+      [money(total), 'Quà fanart'],
       [people ? `${sentCount}/${people}` : '0', 'Đã gửi quà']
     ].forEach(([n, l]) => {
       const c = el('div', 'stat card');
@@ -1687,7 +1690,7 @@
     }
     regulars.forEach(r => {
       const li = el('li', 'regular card');
-      li.append(el('span', 'regular-name', r.ten), giftBadge(r.qua, r.daGui));
+      li.append(el('span', 'regular-name', r.ten), giftBadge(null, r.daGui));
       regEl.appendChild(li);
     });
 
