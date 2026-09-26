@@ -30,8 +30,8 @@ window.TRUNG_THU_EVENT = {
 
   fanarts: [
     // { tacGia: "Tên người vẽ", kenh: "@kenh", anh: "fanart/ten-file.jpg", link: "", qua: 100000, daGui: false },
-    { tacGia: "Hikari", anh: "fanart/hikari.jpg", daGui: false },
-    { tacGia: "Iris", anh: "fanart/iris.webp", daGui: false },
+    { tacGia: "Hikari", anh: "fanart/hikari.jpg", daGui: true },
+    { tacGia: "Iris", anh: "fanart/iris.webp", daGui: true },
   ],
 
   regulars: [
